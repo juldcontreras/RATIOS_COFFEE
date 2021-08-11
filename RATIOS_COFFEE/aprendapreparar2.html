@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>APRENDE A PREPARAR CAFE</title>
+	<link rel="stylesheet" type="text/css" href="estilosj.css">
+</head>
+<body background="fondo.png">
+<center>
+<br>
+<p><font size="15" face="impact" color="white">RATIOS DE CAFÉ</font></p>
+</center>
+<br>
+<div class="item">
+	<div class="informacion">
+		<div class="titulo">
+			¿QUE ES UN RATIO?
+		</div>
+			<div class="descripcion">
+
+				Es un factor importante para asegurar una
+				extracción correcta.
+				Según la SCA se debe moler 6.9 gramos de
+				café por cada 100 mililitros de agua, pero
+				para no complicarnos con los decimales
+				redondeamos a 7 gramos por cada 100
+				mililitros.
+				Debemos tener en cuenta que por cada
+				gramo de café perdemos 2 mililitros de agua
+				por lo que hay que considerar una
+				compensación a la hora de preparar nuestra
+				bebida.
+			</div>
+			<br>
+			<br>
+			<center>
+			<div class="ratios">
+				<img src="ratios.jpg">
+				
+			</div>
+				<br><br><br><br><br><br>
+			<script type="text/javascript">			
+			function suave(signo)
+				{
+					var numero1 = document.Calculadora.numero1.value;
+					var cafe = eval(numero1*7.5);
+					document.Calculadora.cafe1.value=cafe;
+					var numero2 = 16.5;
+					var resulta = eval(cafe+signo+numero2);
+					document.Calculadora.resultado.value=resulta;			
+				}
+				function medio(signo)
+				{
+					var numero1 = document.Calculadora.numero1.value;
+					var cafe=eval (numero1*8.5);
+					document.Calculadora.cafe1.value=cafe;
+					var numero2 = 18;
+					var resulta = eval(cafe+signo+numero2);
+					document.Calculadora.resultado.value=resulta;			
+				}
+				function intenso(signo)
+				{
+					var numero1 = document.Calculadora.numero1.value;
+					var cafe = eval (numero1*9);
+					document.Calculadora.cafe1.value=cafe;
+					var numero2 = 15;
+					var resulta = eval(cafe+signo+numero2);
+					document.Calculadora.resultado.value=resulta;			
+				}
+		</script>
+<div class="formula">
+	<form name="Calculadora">
+		
+		<font class="texto"> Cantidade De Tazas</font>
+		<input type="text" name="numero1" value="" size="5"><br><br>
+		<font class="texto"> ¿Como TE Gusta El cafe?</font><br>
+	
+		<input type="button" value="suave"   	onmousemove="suave('*')">
+		<input type="button" value="medio"  	onmousemove="medio('*')">
+		<input type="button" value="intenso" 	onmousemove="intenso('*')">
+		<br><br>
+		
+		<font class="texto"> Lo Que Necesitas Es:</font><br><br>
+		<strong><font >Cantidad De Café</font></strong>
+		<input type="text" name="cafe1" value="0" size="5">
+		<br>
+		<strong><font >Cantidad De Agua</font></strong>
+		<input type="text" name="resultado" value="0" size="5">	
+	</form>
+	</div>	
+	<br><br>
+		<div class="mejora">CUANDO APRENDES A TOMAR  Y PREPARAR CAFÉ NO SOLO MEJORAS TU DIA TAMBIÉN MEJORAS TU SALUD.</div>		
+	</div>
+</div>
+</div>
+</html>
